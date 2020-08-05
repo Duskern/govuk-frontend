@@ -441,7 +441,7 @@ Good:
 $my-example-var: value;
 ```
 
-### Don't write trailing zeros for numeric values with a decimal point
+### Don't write leading or trailing zeros for numeric values with a decimal point
 
 Bad:
 ```
@@ -453,7 +453,7 @@ Bad:
 Good:
 ```
 .selector {
-  font-size: 0.5em;
+  font-size: .5em;
 }
 ```
 
