@@ -54,7 +54,7 @@ This task will:
 **`gulp test`**
 
 This task will:
-- Run scss:lint
+- Run scss:stylelint
 
 **`gulp watch`**
 
@@ -64,7 +64,7 @@ This task will:
 **`gulp styles`**
 
 This task will:
- - run sass lint task (`gulp scss:lint`)
+ - run sass lint task (`gulp scss:stylelint`)
  - sass compilation (`gulp scss:compile`) to a destination folder that can be specified via a --destination flag
 
 **`gulp scripts`**

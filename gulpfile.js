@@ -7,7 +7,6 @@ const taskArguments = require('./tasks/gulp/task-arguments')
 
 // Gulp sub-tasks
 require('./tasks/gulp/clean.js')
-require('./tasks/gulp/lint.js')
 require('./tasks/gulp/compile-assets.js')
 require('./tasks/gulp/nodemon.js')
 require('./tasks/gulp/watch.js')
@@ -28,7 +27,6 @@ gulp.task('scripts', gulp.series(
 // Runs js lint and compilation
 // --------------------------------------
 gulp.task('styles', gulp.series(
-  'scss:lint',
   'scss:stylelint',
   'scss:compile'
 ))
@@ -45,7 +43,6 @@ gulp.task('copy:assets', () => {
 // Runs js, scss and accessibility tests
 // --------------------------------------
 gulp.task('test', gulp.series(
-  'scss:lint',
   'scss:stylelint',
   'scss:compile'
 ))
